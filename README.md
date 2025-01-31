@@ -21,4 +21,5 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
-This project uses Typescript, sass for component styling.
+
+This project uses Typescript, sass for component styling. Eslint for lint checks and prettier for formatting. It uses `eslint-config-prettier` `eslint-plugin-prettier` plugins so prettier and eslint works together.
