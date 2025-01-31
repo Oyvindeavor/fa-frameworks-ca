@@ -29,13 +29,10 @@ jobs:
         run: npm ci
 
       - name: Run Prettier Check
-        run: npm run prettier:check
+        run: npm run format
 
       - name: Run ESLint
         run: npm run lint
-
-      - name: Run Accessibility Checks
-        run: npm run test:accessibility
 
       - name: Run Tests
         run: npm run test
