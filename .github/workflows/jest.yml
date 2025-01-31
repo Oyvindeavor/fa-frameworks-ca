@@ -40,4 +40,4 @@ jobs:
 
       # Run Jest tests
       - name: Run Jest tests
-        run: npm test  # Ensure your test script in package.json runs Jest
+        run: npm run test  # Ensure your test script in package.json runs Jest
