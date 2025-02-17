@@ -1,0 +1,30 @@
+.footer {
+  width: 100%;
+  border: 1px solid #000000;
+  color: #6c757d;
+  background-color: #f8f9fa;
+
+  .footercontainer {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1200px;
+
+    .sectionlinks {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .footer {
+        flex-direction: column;
+      }
+    }
+  }
+}
