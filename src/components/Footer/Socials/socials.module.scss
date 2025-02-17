@@ -1,0 +1,22 @@
+.socials {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 1rem;
+  transition: all 0.2s ease;
+
+  :global(img) {
+    transition: transform 0.2s ease;
+  }
+
+  :global(a:hover img) {
+    transform: scale(1.1);
+  }
+
+  @media screen and (max-width: 768px) {
+    :global(img) {
+      width: 32px !important;
+      height: 32px !important;
+    }
+  }
+}
