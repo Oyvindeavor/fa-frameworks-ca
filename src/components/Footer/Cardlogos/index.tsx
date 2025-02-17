@@ -9,14 +9,19 @@ export const Cardlogos = () => {
   return (
     <div className={styles.cardlogos}>
       <Image src={"/visa-line.svg"} alt="Visa" width={sizes.width} height={sizes.height} />
-      <Image src={"/mastercard-line.svg"} alt="Visa" width={sizes.width} height={sizes.height} />
       <Image
-        src={"/Vipps_Logo_Monochrome_black.svg"}
-        alt="Visa"
+        src={"/mastercard-line.svg"}
+        alt="Mastercard"
         width={sizes.width}
         height={sizes.height}
       />
-      <Image src={"/paypal-line(1).svg"} alt="Visa" width={sizes.width} height={sizes.height} />
+      <Image
+        src={"/Vipps_Logo_Monochrome_black.svg"}
+        alt="Vipps"
+        width={sizes.width}
+        height={sizes.height}
+      />
+      <Image src={"/paypal-line(1).svg"} alt="Paypal" width={sizes.width} height={sizes.height} />
     </div>
   );
 };
