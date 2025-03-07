@@ -1,0 +1,19 @@
+.container {
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+
+  max-width: 1060px;
+  padding: 20px;
+  width: 100%;
+  min-width: 700px;
+
+  @media screen and (max-width: 768px) {
+    padding: 10px;
+    min-width: 400px;
+  }
+
+  @media screen and (max-width: 400px) {
+    padding: 5px;
+    min-width: 300px;
+  }
+}
