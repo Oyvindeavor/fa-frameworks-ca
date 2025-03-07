@@ -5,7 +5,8 @@ import styles from "./page.module.scss";
 import ProductView from "@/components/Product";
 import { Metadata } from "next";
 
-export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
+export async function generateMetadata(props: ProductPageProps): Promise<Metadata> {
+  const params = await props.params;
   const product = await getProduct(params.id).catch(() => null);
 
   return {
@@ -15,10 +16,11 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 }
 
 interface ProductPageProps {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }
 
-export default async function ProductPage({ params }: ProductPageProps) {
+export default async function ProductPage(props: ProductPageProps) {
+  const params = await props.params;
   const { id } = params;
 
   let product: Product | null = null;
