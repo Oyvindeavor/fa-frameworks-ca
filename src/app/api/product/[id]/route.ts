@@ -5,11 +5,9 @@ import type { ApiResponse } from "@/types/api/apiresponse";
 
 export async function GET(
   request: Request,
-  { params }: { params: { id: string } },
+  context: { params: { id: string } }, // Use `context` instead of destructuring in function signature
 ): Promise<NextResponse> {
-  const { id } = await params;
-  // await is here because nextjs gives an error that it should be awaited,
-  // but is still working without using it. VS code might show an error 'await' has no effect on the type of this expression.
+  const { id } = context.params; // Extract `id` from `context.params`
 
   try {
     const response = await fetch(`${NOROFF_API.SINGLE_PRODUCT(id)}`);
