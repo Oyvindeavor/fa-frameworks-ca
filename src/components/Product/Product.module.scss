@@ -1,0 +1,15 @@
+.productHeader {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+}
+
+.productInfo {
+  padding: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}

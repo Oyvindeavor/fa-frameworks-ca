@@ -1,0 +1,32 @@
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+  transition: all 0.3s ease;
+
+  .open {
+    transform: rotate(45deg);
+  }
+
+  .hamburgerIcon {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .closeIcon {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+}

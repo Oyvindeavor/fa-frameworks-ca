@@ -1,0 +1,16 @@
+.productImg {
+  object-fit: cover;
+  transition: object-fit 0.5s;
+  border-radius: 5px;
+
+  &:hover {
+    object-fit: cover;
+    transition: object-fit 0.3s;
+  }
+}
+
+.imageWrapper {
+  position: relative; // Required for `fill` on next image to work
+  width: 100%;
+  height: 180px;
+}

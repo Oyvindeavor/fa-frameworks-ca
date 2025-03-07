@@ -1,0 +1,26 @@
+.successMessage {
+  text-align: center;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+
+  h1 {
+    color: black;
+    margin: 1rem 0;
+  }
+
+  p {
+    color: #666;
+    margin: 0.5rem 0;
+  }
+}
+
+.icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

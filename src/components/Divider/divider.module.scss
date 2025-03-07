@@ -1,0 +1,18 @@
+.divider {
+  position: relative;
+  height: 1px;
+  margin: 1rem 0;
+  border: none;
+  background: linear-gradient(90deg, transparent, #ddd 50%, transparent);
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+}
