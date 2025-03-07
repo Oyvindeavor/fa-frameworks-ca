@@ -5,9 +5,13 @@ import type { ApiResponse } from "@/types/api/apiresponse";
 
 export async function GET(
   request: Request,
-  context: { params: { id: string } },
+  context: { params?: { id?: string } },
 ): Promise<NextResponse> {
-  const { id } = context.params;
+  const id = context.params?.id;
+
+  if (!id) {
+    return NextResponse.json({ error: "Product ID is required" }, { status: 400 });
+  }
 
   try {
     const response = await fetch(`${NOROFF_API.SINGLE_PRODUCT(id)}`);
