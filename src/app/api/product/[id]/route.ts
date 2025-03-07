@@ -1,15 +1,15 @@
-import { NOROFF_API } from "@api/constants";
+import { NOROFF_API } from "@/app/api/constants";
 import { NextResponse } from "next/server";
 import type { ErrorResponse } from "@/types/api/error";
 import type { ApiResponse } from "@/types/api/apiresponse";
-
 import { NextRequest } from "next/server";
 
+// Use this for App Router dynamic route handlers
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } },
+  { params }: { params: Promise<{ id: string }> },
 ): Promise<NextResponse> {
-  const { id } = params;
+  const { id } = await params;
 
   try {
     const response = await fetch(`${NOROFF_API.SINGLE_PRODUCT(id)}`);
