@@ -4,7 +4,6 @@ import type { ErrorResponse } from "@/types/api/error";
 import type { ApiResponse } from "@/types/api/apiresponse";
 import { NextRequest } from "next/server";
 
-// Use this for App Router dynamic route handlers
 export async function GET(
   request: NextRequest,
   { params }: { params: Promise<{ id: string }> },
