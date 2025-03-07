@@ -3,11 +3,11 @@ import { NextResponse } from "next/server";
 import type { ErrorResponse } from "@/types/api/error";
 import type { ApiResponse } from "@/types/api/apiresponse";
 
-export async function Product(
+export async function GET(
   request: Request,
-  context: { params: { id: string } }, // Use `context` instead of destructuring in function signature
+  context: { params: { id: string } },
 ): Promise<NextResponse> {
-  const { id } = context.params; // Extract `id` from `context.params`
+  const { id } = context.params;
 
   try {
     const response = await fetch(`${NOROFF_API.SINGLE_PRODUCT(id)}`);
