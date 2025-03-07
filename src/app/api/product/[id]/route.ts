@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 import type { ErrorResponse } from "@/types/api/error";
 import type { ApiResponse } from "@/types/api/apiresponse";
 
-export async function GET(
+export async function Product(
   request: Request,
   context: { params: { id: string } }, // Use `context` instead of destructuring in function signature
 ): Promise<NextResponse> {
