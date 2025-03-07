@@ -20,11 +20,13 @@ export interface Product {
   rating: number;
   tags: string[];
   reviews: Review[];
+  quantity?: number;
+  total?: number;
 }
 
 // API response structure
 export interface ApiResponse {
-  data: Product[];
+  data: [];
   meta: {
     isFirstPage: boolean;
     isLastPage: boolean;

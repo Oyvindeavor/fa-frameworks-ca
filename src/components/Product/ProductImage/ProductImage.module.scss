@@ -1,0 +1,23 @@
+.productImage {
+  display: flex;
+  justify-content: center;
+
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
+  width: 100%;
+  img {
+    object-fit: cover;
+    width: 400px !important;
+    height: 400px !important;
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+    border-radius: 12px;
+  }
+
+  @media (max-width: 768px) {
+    img {
+      padding: 20px;
+    }
+  }
+}

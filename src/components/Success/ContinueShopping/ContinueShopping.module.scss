@@ -1,0 +1,15 @@
+.continueShopping {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #007bff;
+  color: black;
+  text-decoration: none;
+  border-radius: 4px;
+  &:hover {
+    background: #0056b3;
+  }
+}

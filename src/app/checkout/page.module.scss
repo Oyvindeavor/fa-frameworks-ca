@@ -1,0 +1,19 @@
+.cartPageContainer {
+  padding: 2rem;
+  transition: all 0.5s;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+}
+
+.pageTitle {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  justify-content: center;
+  display: flex;
+}
+
+.cartContent {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}

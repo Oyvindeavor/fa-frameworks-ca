@@ -12,7 +12,6 @@
 
 html,
 body {
-  height: 100%;
   margin: 0;
   padding: 0;
   display: flex;
@@ -21,19 +20,27 @@ body {
 
 /* Layout  container*/
 .layout {
+  background-color: white;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-
 main {
-  flex: 1;
-  display: flex;
-  background-color: white;
+  flex-grow: 1;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+footer {
+  padding: 1rem;
+  background: var(--foreground);
+  color: var(--background);
+  text-align: center;
 }
 
 body {
-  color: var(--foreground);
+  color: black;
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -60,5 +67,12 @@ li {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 0.5rem;
+    max-width: calc(100% - 2rem);
   }
 }

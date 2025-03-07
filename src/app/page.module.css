@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1070px;
+  width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+  transition: all 0.5s;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+}
