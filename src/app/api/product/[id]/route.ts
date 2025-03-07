@@ -3,11 +3,12 @@ import { NextResponse } from "next/server";
 import type { ErrorResponse } from "@/types/api/error";
 import type { ApiResponse } from "@/types/api/apiresponse";
 
-interface RouteParams {
-  params: { id: string };
-}
+import { NextRequest } from "next/server";
 
-export async function GET(request: Request, { params }: RouteParams): Promise<NextResponse> {
+export async function GET(
+  request: NextRequest,
+  { params }: { params: { id: string } },
+): Promise<NextResponse> {
   const { id } = params;
 
   try {
