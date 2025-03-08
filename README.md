@@ -18,8 +18,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font).
 
 ## Learn More
 
 This project uses Typescript, sass for component styling. Eslint for lint checks and prettier for formatting. It uses `eslint-config-prettier` `eslint-plugin-prettier` plugins so prettier and eslint works together.
+Uses Zustand for state management and Zod for form validation.
