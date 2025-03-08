@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./counter.module.scss";
 
 interface CounterProps {
@@ -7,7 +8,9 @@ interface CounterProps {
 export const Counter = ({ count }: CounterProps) => {
   return (
     <div className={styles.counter}>
-      <p>{count}</p>
+      <Link href="/checkout">
+        <p>{count}</p>
+      </Link>
     </div>
   );
 };

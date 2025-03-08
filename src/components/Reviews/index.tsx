@@ -21,6 +21,7 @@ export default function Reviews({ product }: ReviewsProps) {
               <Rating
                 rating={review.rating}
                 reviews={[]}
+                showReviews={false}
                 aria-label={`Rated ${review.rating} out of 5`}
               />
               <p>{review.description}</p>

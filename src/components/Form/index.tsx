@@ -1,4 +1,4 @@
-"use client"; // If using Next.js App Router
+"use client";
 
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -15,7 +15,7 @@ export default function MyForm() {
   });
 
   const onSubmit = (data: FormSchema) => {
-    console.log("Form Data:", data);
+    console.log(data);
   };
 
   return (

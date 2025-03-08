@@ -23,7 +23,7 @@ export const ProductCard = ({ product }: ProductCardProps) => {
           <h2 className={styles.title} id={`product-${product.id}`}>
             {product.title}
           </h2>
-          <Rating rating={product.rating} reviews={product.reviews} />
+          <Rating rating={product.rating} reviews={product.reviews} showReviews={true} />
           <p className={styles.description}>{product.description}</p>
         </div>
 

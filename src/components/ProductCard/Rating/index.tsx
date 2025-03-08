@@ -14,9 +14,10 @@ import Image from "next/image";
 export interface RatingProps {
   rating: number;
   reviews: Product["reviews"];
+  showReviews: boolean;
 }
 
-export default function Rating({ rating, reviews }: RatingProps) {
+export default function Rating({ rating, reviews, showReviews }: RatingProps) {
   return (
     <div className={styles.rating}>
       {Array.from({ length: Math.floor(rating) }, (_, i) => (
@@ -31,11 +32,12 @@ export default function Rating({ rating, reviews }: RatingProps) {
         </span>
       )}
 
-      {reviews.length !== 1 ? (
-        <span className={styles.count}>({reviews.length}) reviews</span>
-      ) : (
-        <span className={styles.count}>({reviews.length}) review</span>
-      )}
+      {showReviews &&
+        (reviews.length !== 1 ? (
+          <span className={styles.count}>({reviews.length}) reviews</span>
+        ) : (
+          <span className={styles.count}>({reviews.length}) review</span>
+        ))}
     </div>
   );
 }

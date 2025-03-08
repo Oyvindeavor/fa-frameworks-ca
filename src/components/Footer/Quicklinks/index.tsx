@@ -12,12 +12,7 @@ export const QuickLinks = () => {
               Home
             </Link>
           </li>
-          <li>
-            <Link className={styles.link} href={"/about"}>
-              {" "}
-              About
-            </Link>
-          </li>
+
           <li>
             <Link className={styles.link} href={"/contact"}>
               {" "}

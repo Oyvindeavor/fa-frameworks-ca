@@ -12,10 +12,6 @@ describe("QuickLinks Component", () => {
     expect(homeLink).toBeInTheDocument();
     expect(homeLink).toHaveAttribute("href", "/");
 
-    const aboutLink = screen.getByRole("link", { name: "About" });
-    expect(aboutLink).toBeInTheDocument();
-    expect(aboutLink).toHaveAttribute("href", "/about");
-
     const contactLink = screen.getByRole("link", { name: "Contact" });
     expect(contactLink).toBeInTheDocument();
     expect(contactLink).toHaveAttribute("href", "/contact");

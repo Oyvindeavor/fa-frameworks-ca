@@ -18,13 +18,13 @@ export default function ProductView({ product }: ProductViewProps) {
         <ProductImage src={product.image.url} alt={product.image.alt} />
       </div>
       <div className={styles.productInfo}>
+        <Rating rating={product.rating} reviews={product.reviews} showReviews={true} />
         <h1 className={styles.productTitle}>{product.title}</h1>
         <p className={styles.productDescription}>{product.description}</p>
 
         <ProductPrice product={product} />
         <AddToCart product={product} />
 
-        <Rating rating={product.rating} reviews={product.reviews} />
         <Divider />
         <Reviews product={product} />
       </div>
