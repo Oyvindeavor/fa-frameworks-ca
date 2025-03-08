@@ -16,7 +16,7 @@ export const Cardlogos = () => {
         height={sizes.height}
       />
       <Image
-        src={"/Vipps_Logo_Monochrome_black.svg"}
+        src={"/vipps-logo-monochrome-black.svg"}
         alt="Vipps"
         width={sizes.width}
         height={sizes.height}

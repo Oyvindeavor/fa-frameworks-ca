@@ -33,7 +33,6 @@ export default function ProductButton({ product }: ProductButtonProps) {
 
   const handleAddToCart = () => {
     addToCart(product);
-    console.log("Added to cart:", product.title);
   };
 
   return (
