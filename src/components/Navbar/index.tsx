@@ -28,7 +28,9 @@ export const Navbar = () => {
     <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ""}`}>
       <div className={styles.container}>
         <Hamburger isOpen={isOpen} toggleMenu={toggleMenu} />
-        <Logo />
+        <Link href="/">
+          <Logo />
+        </Link>
 
         <div className={`${styles.menu} ${isOpen ? styles.open : ""}`}>
           <Link href="/contact" className={styles.link}>
